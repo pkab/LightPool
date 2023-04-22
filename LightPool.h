@@ -1,3 +1,6 @@
+#ifndef LIGHTPOOL_H
+#define LIGHTPOOL_H
+
 #include <pthread.h>
 #include <queue>
 
@@ -49,3 +52,5 @@ private:
     bool m_stop = false;
     static void *workHandler(void* args);
 };
+
+#endif // LIGHTPOOL_H
